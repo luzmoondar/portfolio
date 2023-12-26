@@ -1,0 +1,517 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #f0e3c8;
+}
+h1{font-size:58px; font-family: 'Raleway', sans-serif; font-weight:300;}
+
+.confix{width:80%; margin:0 auto;}
+
+/*** landscape ***/
+
+.topcon{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+.toptxt{
+    position: absolute;
+    bottom:165px;
+    left:180px;
+    color:#fff;
+}
+.toptxt h2{
+    margin-bottom:10px;
+    font-size:50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+}
+.slide{
+    width:100%;
+    height:auto;
+}
+.slide img{
+    width:100%;
+    object-fit: cover;
+}
+.land_con{
+    margin-top:245px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:1000px;
+    
+}
+.lad_con span{
+    color:#262626;
+}
+.protxt p{
+    font-family: 'myriad-pro, sans-serif';
+    font-size:18px;
+    font-weight:400;
+    margin-top:5px;
+    margin-bottom:55px;
+}
+.protxt span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+    line-height: 32px;
+}
+.protxt{
+    /*width:34.23%;*/
+}
+.proimg{
+    /*width:65.77%;*/
+    position:relative;
+}
+.proimg div:last-child{
+    position:absolute;
+    top:250px;
+    left:-180px;
+}
+
+/*** travel ***/
+
+.travel_con{
+    display: flex;
+    margin:170px 0 300px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.travel_con div{
+    width:740px;
+    margin-bottom:150px;
+}
+.travel_con h4{
+    font-size:17px;
+    font-family: 'Noto Sans KR', serif;
+    padding:25px 0 15px 0;
+    border-bottom:1px solid #342b20;
+    color:#342b20;
+}
+.travel_con p{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', serif;
+    margin-top:10px;
+    line-height: 1.8rem;
+    letter-spacing: -0.3px;
+    color:#342b20;
+}
+
+/*** facility ***/
+.facility_con{
+    margin:170px 0 300px 0;
+}
+.facility_con .sp{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom:140px;
+}
+.spimg{
+    width:1090px;
+}
+.sp img{
+    width:1090px;
+}
+.sptxt{
+    width:30%;
+    margin:0 0 40px 80px;
+}
+.sp h3{
+    font-size:30px;
+    font-family: 'Raleway', sans-serif;
+}
+.sp p{
+    font-size:14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom:25px;
+    margin:20px 0;
+    border-bottom:1px solid #000;
+}
+.sp span{
+    font-size:14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+
+/*** reser ***/
+.topcon2{
+    position:relative;
+    width:100%;
+    height:700px;
+    overflow:hidden;
+}
+.topimg{
+    width:100%;
+    height:700px;
+}
+.toptxt2{
+    position: absolute;
+    bottom:160px;
+    left:180px;
+    color:#fff;
+}
+.toptxt2 h2{
+    font-size:36px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:10px;
+}
+.toptxt2 p{
+    font-size:16px;
+    font-family: 'Raleway', sans-serif;
+}
+.reser_con{
+    margin:230px 0 300px 0;
+    display: flex;
+}
+.reser_info{
+    width:35%;
+}
+.reser_info p{
+    color:#313131;
+}
+.reser_info p:nth-child(1){
+    margin-bottom:8px;
+    font-size:16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+.reser_info p:nth-child(2){
+    margin-bottom:35px;
+    line-height: 28px;
+}
+.rule{
+    width:65%;
+}
+.rule h3{
+    font-family: 'Pretendard-Regular';
+    font-size:14px;
+    padding:15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+}
+.psprice{
+    margin-bottom:100px;
+}
+.psprice .ps_reserday{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:70px 0 38px;
+}
+.psprice p{
+    display:inline-block;
+    padding:0 16px;
+    font-family: 'Pretendard-Regular';
+}
+.psprice table{
+    width:100%;
+    border: 1px solid #000;
+    border-top:2px solid #000;
+    border-bottom:2px solid #000;
+    text-align: center;
+    font-size:14px;
+}
+.psprice table tr{
+    border-bottom:1px solid rgba(0,0,0,0.6);
+}
+.bk_color{
+    background-color: rgba(0,0,0,0.03);
+}
+.psprice table td, .psprice table th{
+    padding:20px;
+    width:20%;
+    border-right:1px solid rgba(0,0,0,0.3);
+}
+.tb_leftline{
+    vertical-align : middle;
+    width:30%;
+    background-color: rgba(0,0,0,0.03);
+}
+.ruletitle{
+    padding:30px 0;
+}
+.ruletitle p{
+    font-size:14px;
+    font-family: 'Pretendard-Regular';
+    line-height:22px;
+    letter-spacing: -0.2px;
+}
+/*** room ***/
+.roomnum{
+    position:absolute;
+    bottom:80px;
+    left:180px;
+}
+.roomnum h2{
+    color:#fff;
+    font-size:48px;
+}
+.room_con{
+    width:1320px;
+    margin:170px auto 300px auto;
+}
+.roomtxt{
+    text-align: center;
+    color: #342b20;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom:30px;
+    margin: 0 auto 65px;
+}
+.roomtxt h3{
+    font-size:30px;
+    margin-bottom:15px;
+    font-weight: 600;
+}
+.roomtxt p{
+    font-size:14px;
+    opacity: 0.5;
+}
+.roomprice{
+    height:370px;
+    margin:0 auto;
+    text-align: center;
+}
+.roomprice p{
+    text-align: center;
+    margin:0 20px;
+}
+.roomprice>div{
+    display: flex;
+    text-align: center;
+}
+.roomprice>div>div{
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid rgba(0,0,0,0.4);
+}
+.roomprice>div:first-child{
+    justify-content: center;
+    align-items: center;
+}
+.roomprice>div:nth-child(3)>div{
+    padding:40px 0;
+}
+.roomprice>div:nth-child(4)>div{
+
+    border-bottom:2px solid #292929;
+}
+.roomprice .day{
+    margin-top:30px;
+}
+.roomprice .day div{
+    border-bottom:2px solid #292929;
+    margin-right:40px;
+    font-weight: 500;
+    font-size:15px;
+}
+.roomprice .day div:last-child{
+    margin-right:0;
+}
+.roominfo {
+    width:100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.03);
+    margin:0 auto;   
+    padding:40px 35px;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+.roominfo div{
+    width:25%;
+    margin-right:30px;
+  
+}
+.roominfo div:last-child{
+    margin-right:0;
+}
+.roominfo h3{
+    border-bottom:1px solid rgba(0,0,0,0.4);
+    padding:10px 0px;
+    font-size:15px;
+    color:#363636;
+}
+.roominfo p{
+    padding:10px 0 20px;
+    font-size:13px;
+    color:#363636;
+    line-height:18px;
+    letter-spacing: 0.3px;
+}
+.roominfo table{
+    text-align: center;
+    font-size:13px;
+    width:100%;
+}
+.roominfo table tr{
+    border-top:1px solid rgba(0,0,0,0.4);
+}
+.roominfo table tr:nth-child(2){
+    border-bottom:1px solid rgba(0,0,0,0.4);
+}
+.roominfo table th{
+    padding:10px 10px;
+}
+.roominfo table td{
+    padding:15px 10px;
+}
+.miniimg{
+    width:100%;
+    margin:0 auto 200px;
+
+}
+.miniimg img{
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*** footer ***/
+footer{
+    padding: 80px 0;
+    border-top:1px solid #a19682;
+    
+}
+footer h3{
+    font-size: 18px;
+    font-family: "pretendard", sans-serif;
+    margin-bottom:10px;
+    color:#2a2218;
+}
+footer p{
+    font-size:14px;
+    font-family: "pretendard", sans-serif;
+    line-height: 20px;
+    color:#2a2218;
+    line-height: 22px;
+}
+footer .mbr{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /*** landscape ***/ 
+    .confix{
+        width:90%;
+    }
+    .topcon, .slide, .slide img{
+        height:55vh;
+    }
+    .toptxt{
+        bottom:80px;
+        left:75px;
+    }
+    .toptxt h2{
+        font-size:24px;
+    }
+    .toptxt h2{
+        margin-bottom:5px;
+    }
+    .toptxt p{
+        font-size:14px;
+    }
+    .land_con{
+        flex-direction: column;
+        margin-top:120px;
+        margin-bottom:500px;
+    }
+    .protxt{
+        margin-bottom:50px;
+    }
+    .protxt h1{
+        font-size:40px;
+    }
+    .proimg img{
+        width:100%;
+    }
+    .proimg div:last-child{
+        position: relative;
+        top:0;
+        left:0;
+        margin-top:30px;
+    }
+    /*** travel ***/
+    .travel_con{
+        display: flex;
+        margin:120px 0 250px 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .travel_con div{
+        width:100%;
+    }
+    .travel_con div img{
+        width:100%;
+    }
+    /*** facility ***/
+
+    .facility_con .sp {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .spimg, .spimg img{
+        width:100%;
+    }
+    .sptxt {
+        width:100%;
+        margin:20px 0 0 0;
+    }
+    /*** room ***/
+    .roomnum h2{
+        display:none;
+    }
+    .room_con{
+        width:100%;
+        margin-bottom:200px;
+    }
+    .roomtxt h3{
+        font-size:26px;
+    }
+    .roominfo {
+        flex-direction: column;
+    }
+    .roominfo div{
+        width:100%;
+    }
+   
+    /*** footer ***/
+    footer p .m_none{
+        display:none;
+    }
+    
+
+}
+@media (max-width: 480px) {
+    /*** landscape ***/
+    h2{
+        font-size:18px;
+    }
+    .toptxt{
+        bottom:50px;
+        left:25px;
+    }
+    .topcon, .slide, .slide img{
+        height:43vh;
+    }
+    .land_con{
+        margin-bottom:200px;
+    }
+    /*** facility ***/
+    .sp h3 {
+        font-size:28px;
+    }
+    /*** room ***/
+    .room_con{
+        margin-bottom:150px;
+    }
+    .roomprice .day div{
+        margin-right:30px;
+    }
+}
