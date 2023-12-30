@@ -5,54 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/htw4hev.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
     <title>오션빌글램핑</title>
+    <style>
+        footer{position:relative; width:100%; height:960px; background-image: url("img/main/foot.jpg");}
+        .mainft{position:absolute; bottom:0; width:100%; background-color: rgba(0,0,0,0.5); border-top:1px solid #e5e4e4;}
+        .mainft div{width:80%; margin:0 auto; padding: 80px 0;}
+        footer h2{font-family: 'SBAggro'; font-weight:600; font-size:30px; letter-spacing: 1.2px; color:#e5e4e4; position: absolute; bottom:274px; left:190px;}
+        footer h3{font-size: 18px; font-family: "pretendard", sans-serif; color:#e5e4e4; margin-bottom:10px;}
+        footer p{font-size:14px; font-family: "pretendard", sans-serif; color:#e5e4e4; line-height: 22px; font-weight: 100;}
+        footer .mbr{display: none;}
+        @media (max-width: 768px) {
+            footer p .m_none{display:none;}
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/layout/logo.png">
+                    <p>OCEANVILL<br>GLAMPING</p>
+                </a>
+            </div>
+            <div class="scroll-logo">
+                <div>
+                    <img src="img/layout/scroll-logo.png">
+                    <p>OCEANVILL GLAMPING</p>
+                </div>
+            </div>
+            <div class="manubar">
+                <ul class="main-manu">
+                    <li>
+                        <a>ABOUT</a>
+                    </li>
+                    <li><a>ROOMS</a></li>
+                    <li><a>RESERVE</a></li>
+                    <li><a>FACILITY</a></li>
+                    <li><a class="reser-bt"><img class="reserimg" src="img/layout/reser.png">실시간예약</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sub-manu">
+            <div>
+                <ul>
+                    <li><a href="">외부전경</a></li>
+                    <li><a>오시는 길</a></li>
+                    <li><a>주변여행지</a></li>
+                </ul>
+                <ul>
+                    <li><a>객실배치도</a></li>
+                    <li><a>101호</a></li>
+                    <li><a>102호</a></li>
+                    <li><a>103호</a></li>
+                    <li><a>104호</a></li>
+                    <li><a>105호</a></li>
+                    <li><a>106호</a></li>
+                    <li><a>107호</a></li>
+                </ul>
+                <ul>
+                    <li><a>종합예약안내</a></li>
+                    <li><a href="https://booking.pensionnara.co.kr/calendar/256" target="_">실시간예약</a></li>
+                </ul>
+                <ul>
+                    <li><a>대형수영장</a></li>
+                    <li><a>온수수영장</a></li>
+                    <li><a>개별바비큐</a></li>
+                    <li><a>오션뷰</a></li>
+                    <li><a>무선인터넷</a></li>
+                </ul>
+            </div>
+        </div> 
+    </header>
+    
+
     <section>
         <div class="topcon">
-            <div class="toptxt">
-                <h2>landscape</h2>
-                <p>외부전경</p>
-            </div>
-            
             <div class="slide">
-                <img src="![1](https://github.com/luzmoondar/portfolio/assets/133784112/d9080e21-81d8-4349-ac68-2bc2d1178bbb)">
-
+                <img src="https://github.com/luzmoondar/portfolio/assets/133784112/fe9ecc0a-6035-4c3a-a89f-1b163b70b11f">
             </div>
             
         </div>
     </section>
     <section>
-        <div class="confix">
-            <div class="land_con">
-                <div class="protxt">
-                    <h1>Prologue</h1>
-                    <p>oceanvill glamping</p>
-                    <span>강화도의 아름다운 낙조 전망을 객실에서 감상할 수 있는 곳에 위치한<br>
-                        오션빌글램핑은 자연과 비슷한 톤들로 이루어진 라탄 가구를 통해<br>
-                        이국적인 분위기와 편안함을 느끼며 쉴 수 있는 공간입니다.</span>
+        <div class="">
+            <div class="main_con">
+                <div class="mainab">
+                    <div class="left">
+                        <div>
+                            <img src="img/main/about_left.jpg">
+                        </div>
+                    </div>
+                    <div class="right">
+                    </div>
                 </div>
-                <div class="proimg">
-                    <div><img src="img/landscape/land1.jpg"></div>
-                    <div><img src="img/landscape/land2.jpg"></div>
+                <div class="roompv">
+                    <div class="roombg">
+                        <div class="roompvtxt">
+                            <h2>ROOMS</h2>
+                            <p>
+                                잔잔한 파도 소리와 함께하는<br>
+                                힐링 여행을 즐겨보세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="roomslide">
+                        <a class="room1">
+                            <img src="img/main/101.jpg">
+                            <div class="roomname">
+                                <span></span><p>101</p>
+                            </div>
+                        </a>
+                        <a class="room1">
+                            <img src="img/main/102.jpg">
+                            <div class="roomname">
+                                <span></span><p>102</p>
+                            </div>
+                        </a>
+                        <a class="room1">
+                            <img src="img/main/103.jpg">
+                            <div class="roomname">
+                                <span></span><p>103</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mainsp">
+                    <div class="mainsptxt">
+                        <h2>FACILITY</h2>
+                        <p>
+                            즐길거리
+                        </p>
+                    </div>
+                    <div class="main_spslide">
+                        <a>
+                            <img src="img/main/sp1.jpg">
+                            <div class="spname">
+                                <p>large swimming pool</p><span></span>
+                            </div>
+                        </a>
+                        <a>
+                            <img src="img/main/sp3.jpg">
+                            <div class="spname">
+                                <p>outdoor swimming pool</p><span></span>
+                            </div>
+                        </a>
+                        <a>
+                            <img src="img/main/sp2.jpg">
+                            <div class="spname">
+                                <p>individual barbecue place</p><span></span>
+                            </div>
+                        </a>
+                        <a>
+                            <img src="img/main/sp4.jpg">
+                            <div class="spname">
+                                <p>outdoor swimming pool</p><span></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="confix">
-            <h3>오션빌글램핑</h3>
-            <p>
-                <a href="tel:010-8362-7654">TEL. 010-8362-7654</a><br>
-                대표. 조인경 <br class="mbr"><span class="m_none">|</span> 인천광역시 강화군 화도면 해안남로 2421-227<br>
-                사업자번호. 878-61-00796<br>
-                ACC. 카카오뱅크 3333-11-1146663 (예금주 : 조인경)
-            </p>
+        <h2>OCEANVILL GLAMPING</h2>
+        <div class="mainft">
+            <div>
+                <h3>오션빌글램핑</h3>
+                <p>
+                    TEL. 010-8362-7654<br>
+                    대표. 조인경 <br class="mbr"><span class="m_none">|</span> 인천광역시 강화군 화도면 해안남로 2421-227<br>
+                    사업자번호. 878-61-00796<br>
+                    ACC. 카카오뱅크 3333-11-1146663 (예금주 : 조인경)
+                </p>
+            </div>
         </div>
     </footer>
+    <script>
+        $(function(){
+            var fixScroll = 0;
+            $(window).scroll(function(event){
+                var scroll = $(this).scrollTop();
+                if (scroll > 100){
+                //스크롤 높이 설정
+                    $("#main-nav").addClass("active");
+                    $(".logo").css("display","none");
+                    $(".scroll-logo").css("display","block");
+                    $("nav .main-manu li a").css({"color":"#523a15","text-shadow":"none"});
+                    $(".reserimg").attr("src","img/layout/scroll-reser.png");
+                }
+                else {
+                    $("#main-nav").removeClass("active");
+                    $(".logo").css("display","block");
+                    $(".scroll-logo").css("display","none");
+                    $("nav .main-manu li a").css({"color":"#fff","text-shadow":"1px 1px 1px rgba(0,0,0,0.2)"});
+                    $(".reserimg").attr("src","img/layout/reser.png");
+                }
+                fixScroll = scroll;
+            });
+        });
+        $(".main-manu li").mouseover(
+            function() {
+                $(".sub-manu").css("opacity","1");
+                $("#main-nav").addClass("active");
+                $(".logo").css("display","none");
+                $(".scroll-logo").css("display","block");
+                $("nav .main-manu li a").css({"color":"#523a15","text-shadow":"none"});
+                $(".reserimg").attr("src","img/layout/scroll-reser.png");
+            }
+        );
+        $(".sub-manu").mouseleave(
+            function() {
+                $(".sub-manu").css("opacity","0");
+            }
+        );
+        
+       </script>
+
 </body>
+
 </html>
