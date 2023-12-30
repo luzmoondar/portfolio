@@ -122,11 +122,11 @@ nav .manubar .reser-bt img{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right:190px;
+    padding-right:182px;
 }
 .sub-manu ul{
     padding-top:25px;
-    width:138px;
+    width:140px;
 }
 .sub-manu ul:last-child{
 }
