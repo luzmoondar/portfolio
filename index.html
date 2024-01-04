@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <!--slick slide-->
     <link href="slick/slick.css" rel="stylesheet">
     <link href="slick/slick-theme.css" rel="stylesheet">
-    <script src="slick/slick.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--제이쿼리 script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!--슬라이드스크립트-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="https://use.typekit.net/htw4hev.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +24,7 @@
         footer{position:relative; width:100%; height:960px; background-image: url("https://github.com/luzmoondar/portfolio/assets/133784112/582e2d6d-6e89-460c-a2c4-90adc4d90cf0");}
         .mainft{position:absolute; bottom:0; width:100%; background-color: rgba(0,0,0,0.5); border-top:1px solid #e5e4e4;}
         .mainft div{width:80%; margin:0 auto; padding: 80px 0;}
-        footer h2{font-family: 'SBAggro'; font-weight:600; font-size:30px; letter-spacing: 1.2px; color:#e5e4e4; position: absolute; bottom:274px; left:190px;}
+        footer h2{font-family: 'SBAggro'; font-weight:600; font-size:30px; letter-spacing: 1.2px; color:#e5e4e4; position: absolute; bottom:270px; left:190px;}
         footer h3{font-size: 18px; font-family: "pretendard", sans-serif; color:#e5e4e4; margin-bottom:10px;}
         footer p{font-size:14px; font-family: "pretendard", sans-serif; color:#e5e4e4; line-height: 22px; font-weight: 100;}
         footer .mbr{display: none;}
@@ -53,7 +57,7 @@
                     <li><a href="room1.html">ROOMS</a></li>
                     <li><a href="reser.html">RESERVE</a></li>
                     <li><a href="facility.html">FACILITY</a></li>
-                    <li><a class="reser-bt"><img class="reserimg" src="https://github.com/luzmoondar/portfolio/assets/133784112/2ab39636-f84e-4e5f-a764-0b7d822ae99b">실시간예약</a></li>
+                    <li><a class="reser-bt"><img class="reserimg" src="https://github.com/luzmoondar/portfolio/assets/133784112/2ab39636-f84e-4e5f-a764-0b7d822ae99b" >실시간예약</a></li>
                 </ul>
             </div>
         </nav>
@@ -92,17 +96,25 @@
 
     <section>
         <div class="topcon">
-            <div class="slide">
-                <img src="https://github.com/luzmoondar/portfolio/assets/133784112/196bc24e-c12a-4998-ab2c-cdede929367d">
+            <div class="slide_container">
+                <div class="slide slick">
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/ff449864-52a7-4b14-87ef-b3b8067ddd45"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/c8a2a839-92b2-43c5-9f87-153761215001"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/4312c203-c3aa-4ba5-9b2b-721ca6febbda"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/c31de686-edaf-426b-bd4d-11cb2b00fa4f"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/0bc28dbf-a677-4d08-ad11-c4665dc1847d"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/17600ce9-0e4d-48af-8356-8a3a6e8021bb"></div>
+                    <div class=""><img src="https://github.com/luzmoondar/portfolio/assets/133784112/8607fe67-4b55-468b-9e65-2b34b872ed72"></div>
+                </div>
             </div>
             <div class="slide_button">
                 <div>
-                    <p>1</p>
+                    <p class="sPage1">1</p>
                     <p class="slide-num-line"></p>
-                    <p>20</p>
-                    <button class="prev"><img src="https://github.com/luzmoondar/portfolio/assets/133784112/3acfe3e8-08a0-43aa-87df-2086f5bb401e"></button>
-                    <button class="stop">STOP</button>
-                    <button class="next"><img src="https://github.com/luzmoondar/portfolio/assets/133784112/494dd692-85c7-4289-9b93-9761fa106c80"></button>
+                    <p class="sPage2">7</p>
+                    <button id="mainprev"><img src="https://github.com/luzmoondar/portfolio/assets/133784112/494dd692-85c7-4289-9b93-9761fa106c80"></button>
+                    <button id="stop">STOP</button>
+                    <button id="mainnext"><img src="https://github.com/luzmoondar/portfolio/assets/133784112/3acfe3e8-08a0-43aa-87df-2086f5bb401e"></button>
                 </div>
             </div>
             
@@ -130,26 +142,63 @@
                             </p>
                         </div>
                     </div>
-                    <div class="roomslide">
-                        <a class="room1">
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/7d99c960-bddd-4890-a9f7-7f085e9490b0">
-                            <div class="roomname">
-                                <span></span><p>101</p>
+                    <div class="rvbox">
+                        <div class="roombotton">
+                            <img id="rvprev" src="https://github.com/luzmoondar/portfolio/assets/133784112/1eb082d4-d3ec-4473-8887-a63217668352" style="margin-right:20px;">
+                            <img id="rvnext"src="https://github.com/luzmoondar/portfolio/assets/133784112/bea49f99-916b-4f9d-b4ba-317c55b96320">
+                        </div>
+                        <div class="roomslide">
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/f31b313e-3a9d-4c16-9313-d62f2237d40d">
+                                    <div class="roomname">
+                                        <span></span><p>101</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                        <a class="room1">
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/e8737c90-5ca4-401c-913c-cbe94129581f">
-                            <div class="roomname">
-                                <span></span><p>102</p>
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/ffd266e4-e548-4031-a814-8ee09887b1c5">
+                                    <div class="roomname">
+                                        <span></span><p>102</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                        <a class="room1">
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/4e9d8852-0819-44da-ac06-e41babfb9af7">
-                            <div class="roomname">
-                                <span></span><p>103</p>
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/fc34240f-78bb-4499-ba91-669d689361fd">
+                                    <div class="roomname">
+                                        <span></span><p>103</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/d23dc0ca-d656-4dd0-94f4-6e27825bc60f">
+                                    <div class="roomname">
+                                        <span></span><p>104</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/9c1b9fc1-3562-448a-b248-0bb75a32db78">
+                                    <div class="roomname">
+                                        <span></span><p>105</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="room1">
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/ebb51931-1e83-4a76-8626-46a7a60dd33a">
+                                    <div class="roomname">
+                                        <span></span><p>106</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--roomslide end-->
                     </div>
+                    
                 </div>
                 <div class="mainsp">
                     <div class="mainsptxt">
@@ -158,32 +207,55 @@
                             즐길거리
                         </p>
                     </div>
-                    <div class="main_spslide">
-                        <a>
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/99fcfb23-d3a0-47f1-9f27-77c24f21ff22">
-                            <div class="spname">
-                                <p>large swimming pool</p><span></span>
-                            </div>
-                        </a>
-                        <a>
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/9a6bf849-5ea4-4dce-b26d-e572c8afbf24">
-                            <div class="spname">
-                                <p>outdoor swimming pool</p><span></span>
-                            </div>
-                        </a>
-                        <a>
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/5578de9e-afdf-4fd5-a2f0-95fa2bbe487f">
-                            <div class="spname">
-                                <p>individual barbecue place</p><span></span>
-                            </div>
-                        </a>
-                        <a>
-                            <img src="https://github.com/luzmoondar/portfolio/assets/133784112/6bf30c2c-f445-4214-992d-34be26891b6b">
-                            <div class="spname">
-                                <p>outdoor swimming pool</p><span></span>
-                            </div>
-                        </a>
+                    <div class="spbotton">
+                        <img id="spprev" src="https://github.com/luzmoondar/portfolio/assets/133784112/1eb082d4-d3ec-4473-8887-a63217668352" style="margin-right:20px;">
+                        <img id="spnext"src="https://github.com/luzmoondar/portfolio/assets/133784112/bea49f99-916b-4f9d-b4ba-317c55b96320">
                     </div>
+                    <div class="spbox">
+                        <div class="spslide">
+                            <div>
+                                <a>
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/d057c637-5599-4457-a306-802702c64e77">
+                                    <div class="spname">
+                                        <p>large swimming pool</p><span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a>
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/7bb37328-7493-4e22-a1a2-7b2ab3d8f9cf">
+                                    <div class="spname">
+                                        <p>outdoor swimming pool</p><span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a>
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/3cae8ee3-ae4a-481b-bada-98d5dac485ec">
+                                    <div class="spname">
+                                        <p>barbecue place</p><span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a>
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/77199a7d-66e9-4d57-9088-f4c1a3512f80">
+                                    <div class="spname">
+                                        <p>ocean view</p><span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a>
+                                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/d8980a83-aaf1-430f-8d8e-d0e65cab264a">
+                                    <div class="spname">
+                                        <p>wi-fi</p><span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -207,13 +279,15 @@
             var fixScroll = 0;
             $(window).scroll(function(event){
                 var scroll = $(this).scrollTop();
-                if (scroll > 100){
                 //스크롤 높이 설정
+                if (scroll > 100){
                     $("#main-nav").addClass("active");
+                    $(".reserimg").attr("src","https://github.com/luzmoondar/portfolio/assets/133784112/42b3cdd8-f83c-436b-86d0-ec7eb997bf09");
                     $(".logo").css("display","none");
                     $(".scroll-logo").css("display","block");
+                    
                     $("nav .main-manu li a").css({"color":"#523a15","text-shadow":"none"});
-                    $(".reserimg").attr("src","https://github.com/luzmoondar/portfolio/assets/133784112/42b3cdd8-f83c-436b-86d0-ec7eb997bf09");
+                    
                 }
                 else {
                     $("#main-nav").removeClass("active");
@@ -240,7 +314,58 @@
                 $(".sub-manu").css("opacity","0");
             }
         );
+    </script>
+    <script>
+        $('.slick').slick({
+            autoplay: true,             //슬라이드 자동 시작(true or false) ▶기본값 false
+            autoplaySpeed: 2000,        //슬라이드 자동 넘기기 시간(1000ms = 1초) 곧, 슬라이드 하나당 머무는 시간
+            prevArrow: $('#mainprev'),      //이전 화살표만 변경
+            nextArrow: $('#mainnext'),      //다음 화살표만 변경
+            
+        });
+        $('.slide').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){ 
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.sPage1').html(i);
+        $('.sPage2').html(slick.slideCount);
+        });
+
+        $('.roomslide').slick({
+            autoplay: true,             //슬라이드 자동 시작(true or false) ▶기본값 false
+            autoplaySpeed: 2000,        //슬라이드 자동 넘기기 시간(1000ms = 1초) 곧, 슬라이드 하나당 머무는 시간
+            prevArrow: $('#rvprev'),      //이전 화살표만 변경
+            nextArrow: $('#rvnext'),      //다음 화살표만 변경
+            slidesToShow: 4,            //한번에 보여줄 슬라이드 아이템 개수
+            slidesToScroll: 1,           //한번에 넘길 슬라이드 아이템 개수
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        
+        $('.spslide').slick({
+            autoplay: true,             //슬라이드 자동 시작(true or false) ▶기본값 false
+            autoplaySpeed: 2000,        //슬라이드 자동 넘기기 시간(1000ms = 1초) 곧, 슬라이드 하나당 머무는 시간
+            prevArrow: $('#spprev'),      //이전 화살표만 변경
+            nextArrow: $('#spnext'),      //다음 화살표만 변경
+            slidesToShow: 4,            //한번에 보여줄 슬라이드 아이템 개수
+            slidesToScroll: 1           //한번에 넘길 슬라이드 아이템 개수
+            
+        });
         
     </script>
+    
+    
 </body>
 </html>
