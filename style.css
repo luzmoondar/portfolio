@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -64,7 +65,7 @@ nav .scroll-logo{
     width:320px;
     float:left;
 }
-nav .scroll-logo div{
+nav .scroll-logo a{
     display: flex;
     align-items: center;
 }
@@ -139,33 +140,52 @@ nav .manubar .reser-bt img{
     font-size:14px;
 }
 
+.slide{
+    position: relative;
+    width:100%;
 
+}
+.slide img{
+    width:100%;
+    object-fit: cover;
+    float: left;
+}
 
+.slide_button{
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,0.3);
+    width:270px;
+    height:70px;
+    z-index: 1;
+}
+.slide_button div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    line-height: 70px; 
+}
+.slide_button p{
+    color:#fff;
+    padding:0 10px;
+}
+.slide-num-line{
+    width:6px;
+    border:1px solid #fff;
+    display:inline-block;
+    height: 0px;
+}
+.prev{
 
+}
+.next{
 
+}
+.stop{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    color:#fff;
+}
 
 
 /*** main ***/
@@ -322,6 +342,7 @@ nav .manubar .reser-bt img{
     bottom:165px;
     left:180px;
     color:#fff;
+    z-index: 1;
 }
 .toptxt h2{
     margin-bottom:10px;
@@ -329,14 +350,7 @@ nav .manubar .reser-bt img{
     font-family: 'Raleway', sans-serif;
     font-weight:300;
 }
-.slide{
-    width:100%;
-    height:auto;
-}
-.slide img{
-    width:100%;
-    object-fit: cover;
-}
+
 .land_con{
     margin-top:245px;
     display:flex;
@@ -414,6 +428,7 @@ nav .manubar .reser-bt img{
 .sp img{
     width:1090px;
 }
+
 .sptxt{
     width:30%;
     margin:0 0 40px 80px;
@@ -544,6 +559,7 @@ nav .manubar .reser-bt img{
     position:absolute;
     bottom:80px;
     left:180px;
+    z-index: 1;
 }
 .roomnum h2{
     color:#fff;

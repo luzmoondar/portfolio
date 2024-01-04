@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <script src="slick/slick.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/htw4hev.css">
@@ -31,16 +34,16 @@
     <header>
         <nav id="main-nav">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="https://github.com/luzmoondar/portfolio/assets/133784112/48d3136c-fff9-4b66-9c22-74a640f101fd">
                     <p>OCEANVILL<br>GLAMPING</p>
                 </a>
             </div>
             <div class="scroll-logo">
-                <div>
+                <a href="index.html" style="cursor: pointer;">
                     <img src="https://github.com/luzmoondar/portfolio/assets/133784112/112349c2-64f6-43d1-a6a1-1b9d9a200514">
                     <p>OCEANVILL GLAMPING</p>
-                </div>
+                </a>
             </div>
             <div class="manubar">
                 <ul class="main-manu">
@@ -90,7 +93,18 @@
     <section>
         <div class="topcon">
             <div class="slide">
-                <img src="https://github.com/luzmoondar/portfolio/assets/133784112/fe9ecc0a-6035-4c3a-a89f-1b163b70b11f">
+                <img src="img/main/10.jpg">
+                <img src="img/main/10.jpg">
+            </div>
+            <div class="slide_button">
+                <div>
+                    <p>1</p>
+                    <p class="slide-num-line"></p>
+                    <p>20</p>
+                    <button class="prev"><img src="img/main/prev.png"></button>
+                    <button class="stop">STOP</button>
+                    <button class="next"><img src="img/main/next.png"></button>
+                </div>
             </div>
             
         </div>
@@ -228,8 +242,6 @@
             }
         );
         
-       </script>
-
+    </script>
 </body>
-
 </html>

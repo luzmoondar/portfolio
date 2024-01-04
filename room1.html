@@ -6,13 +6,76 @@
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <script src="slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/htw4hev.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet">
     <title>오션빌글램핑</title>
 </head>
 <body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/48d3136c-fff9-4b66-9c22-74a640f101fd">
+                    <p>OCEANVILL<br>GLAMPING</p>
+                </a>
+            </div>
+            <div class="scroll-logo">
+                <a href="index.html" style="cursor: pointer;">
+                    <img src="https://github.com/luzmoondar/portfolio/assets/133784112/112349c2-64f6-43d1-a6a1-1b9d9a200514">
+                    <p>OCEANVILL GLAMPING</p>
+                </a>
+            </div>
+            <div class="manubar">
+                <ul class="main-manu">
+                    <li>
+                        <a href="landscape.html">ABOUT</a>
+                    </li>
+                    <li><a href="room1.html">ROOMS</a></li>
+                    <li><a href="reser.html">RESERVE</a></li>
+                    <li><a href="facility.html">FACILITY</a></li>
+                    <li><a class="reser-bt"><img class="reserimg" src="https://github.com/luzmoondar/portfolio/assets/133784112/2ab39636-f84e-4e5f-a764-0b7d822ae99b">실시간예약</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sub-manu">
+            <div>
+                <ul>
+                    <li><a href="landscape.html">외부전경</a></li>
+                    <li><a href="">오시는 길</a></li>
+                    <li><a href="travel.html">주변여행지</a></li>
+                </ul>
+                <ul>
+                    <li><a>객실배치도</a></li>
+                    <li><a href="room1.html">101호</a></li>
+                    <li><a>102호</a></li>
+                    <li><a>103호</a></li>
+                    <li><a>104호</a></li>
+                    <li><a>105호</a></li>
+                    <li><a>106호</a></li>
+                    <li><a>107호</a></li>
+                </ul>
+                <ul>
+                    <li><a href="reser.html">종합예약안내</a></li>
+                    <li><a href="https://booking.pensionnara.co.kr/calendar/256" target="_">실시간예약</a></li>
+                </ul>
+                <ul>
+                    <li><a href="facility.html">대형수영장</a></li>
+                    <li><a href="facility.html">온수수영장</a></li>
+                    <li><a href="facility.html">개별바비큐</a></li>
+                    <li><a href="facility.html">오션뷰</a></li>
+                    <li><a href="facility.html">무선인터넷</a></li>
+                </ul>
+            </div>
+        </div> 
+    </header>
     <section>
         <div class="topcon">
             <div class="roomnum">
@@ -127,5 +190,45 @@
             </p>
         </div>
     </footer>
+    <script>
+        $(function(){
+            var fixScroll = 0;
+            $(window).scroll(function(event){
+                var scroll = $(this).scrollTop();
+                if (scroll > 100){
+                //스크롤 높이 설정
+                    $("#main-nav").addClass("active");
+                    $(".logo").css("display","none");
+                    $(".scroll-logo").css("display","block");
+                    $("nav .main-manu li a").css({"color":"#523a15","text-shadow":"none"});
+                    $(".reserimg").attr("src","https://github.com/luzmoondar/portfolio/assets/133784112/42b3cdd8-f83c-436b-86d0-ec7eb997bf09");
+                }
+                else {
+                    $("#main-nav").removeClass("active");
+                    $(".logo").css("display","block");
+                    $(".scroll-logo").css("display","none");
+                    $("nav .main-manu li a").css({"color":"#fff","text-shadow":"1px 1px 1px rgba(0,0,0,0.2)"});
+                    $(".reserimg").attr("src","https://github.com/luzmoondar/portfolio/assets/133784112/2ab39636-f84e-4e5f-a764-0b7d822ae99b");
+                }
+                fixScroll = scroll;
+            });
+        });
+        $(".main-manu li").mouseover(
+            function() {
+                $(".sub-manu").css("opacity","1");
+                $("#main-nav").addClass("active");
+                $(".logo").css("display","none");
+                $(".scroll-logo").css("display","block");
+                $("nav .main-manu li a").css({"color":"#523a15","text-shadow":"none"});
+                $(".reserimg").attr("src","https://github.com/luzmoondar/portfolio/assets/133784112/42b3cdd8-f83c-436b-86d0-ec7eb997bf09");
+            }
+        );
+        $(".sub-manu").mouseleave(
+            function() {
+                $(".sub-manu").css("opacity","0");
+            }
+        );
+        
+    </script>
 </body>
 </html>
